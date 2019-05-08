@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+		<style>
+			.t{
+			background: red;
+				width: 100px;
+				height: 30px;
+				position: absolute;
+				right: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-slider t">
+			<div class="mui-slider-group mui-slider-loop">
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="4.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="1.jpg" />1</a></div>
+				<div class="mui-slider-item"><a href="#"><img src="2.jpg" />2</a></div>
+				<div class="mui-slider-item"><a href="#"><img src="3.jpg" />3</a></div>
+				<div class="mui-slider-item"><a href="#"><img src="4.jpg" />4</a></div>
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="1.jpg" /></a></div>
+			</div>
+		</div>
+	</body>
+</html>
